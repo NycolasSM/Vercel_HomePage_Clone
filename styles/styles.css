@@ -117,7 +117,7 @@ header .right .avatar {
   cursor: pointer;
 }
 
-footer {
+section {
   color: var(--white);
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -262,7 +262,7 @@ main h2 {
   text-align: center;
 }
 
-footer {
+section {
   color: var(--white);
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -270,5 +270,38 @@ footer {
   letter-spacing: 0.32rem;
   text-align: center;
   margin-bottom: 4.8rem;
+}
+
+section .pathSectionLineContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .pathSectionLineContainer .pathSectionLine {
+  height: 100px;
+  width: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#019ae9));
+  background-image: linear-gradient(white, #019ae9);
+  background-origin: padding-box;
+  background-clip: border-box;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-attachment: scroll;
+  color: red;
+  background: red;
+  --start-color: white;
+  --end-color: blue;
 }
 /*# sourceMappingURL=styles.css.map */

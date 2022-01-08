@@ -1,0 +1,30 @@
+section {
+
+  .pathSectionLineContainer {
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    .pathSectionLine {
+      height: 100px;
+      width: 2px;
+      box-sizing: border-box;
+      background-size: auto;
+      background-image: linear-gradient(rgb(255, 255, 255), #019ae9);
+      background-origin: padding-box;
+      background-clip: border-box;
+      align-self: center;
+      background-attachment: scroll;
+      color: red;
+      background: red;
+      --start-color: white;
+      --end-color: blue;
+    }
+  }
+
+
+
+  //rgb(255, 255, 255)
+  //#019AE9
+}
