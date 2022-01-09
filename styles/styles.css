@@ -195,8 +195,8 @@ main h1 span {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: colorCycle 10s infinite ease-in-out;
-          animation: colorCycle 10s infinite ease-in-out;
+  -webkit-animation: colorCycle 9s infinite ease-in-out;
+          animation: colorCycle 9s infinite ease-in-out;
 }
 
 main h1 span:nth-child(1) {
@@ -272,36 +272,143 @@ section {
   margin-bottom: 4.8rem;
 }
 
-section .pathSectionLineContainer {
+section .sectionLabelContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-section .pathSectionLineContainer .pathSectionLine {
+section .sectionLabelContainer .sectionLabelText {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+section .sectionLabelContainer .sectionLabelLine {
+  margin-top: 60px;
   height: 100px;
   width: 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-size: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#019ae9));
-  background-image: linear-gradient(white, #019ae9);
-  background-origin: padding-box;
-  background-clip: border-box;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-attachment: scroll;
-  color: red;
-  background: red;
-  --start-color: white;
-  --end-color: blue;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#696969));
+  background-image: linear-gradient(#000000, #696969);
+}
+
+section .sectionLabelContainer .sectionLabelLine.blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#019ae9));
+  background-image: linear-gradient(#000000, #019ae9);
+}
+
+section .sectionLabelContainer .sectionLabelLine.purple {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#ff0080));
+  background-image: linear-gradient(#000000, #ff0080);
+}
+
+section .sectionLabelContainer .sectionLabelLine.orange {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#FF4D4D));
+  background-image: linear-gradient(#000000, #FF4D4D);
+}
+
+section .sectionLabelContainer .sectionLabelNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0 0 0 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#242424), to(#868686));
+  background: linear-gradient(90deg, #242424, #868686);
+}
+
+section .sectionLabelContainer .sectionLabelNumber.blue {
+  background: -webkit-gradient(linear, left top, right top, from(#007CF0), to(#00DFD8));
+  background: linear-gradient(90deg, #007CF0, #00DFD8);
+}
+
+section .sectionLabelContainer .sectionLabelNumber.purple {
+  background: -webkit-gradient(linear, left top, right top, from(#7928ca), to(#ff0080));
+  background: linear-gradient(90deg, #7928ca, #ff0080);
+}
+
+section .sectionLabelContainer .sectionLabelNumber.orange {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF4D4D), to(#F9CB28));
+  background-image: linear-gradient(90deg, #FF4D4D, #F9CB28);
+}
+
+section .sectionLabelContainer .sectionLabelTitle {
+  margin-top: 35px;
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.09rem;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: capitalize;
+  background-image: -webkit-gradient(linear, left top, right top, from(#242424), to(#868686));
+  background-image: linear-gradient(90deg, #242424, #868686);
+}
+
+section .sectionLabelContainer .sectionLabelTitle.blue {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0675dd), to(#26eee7));
+  background-image: linear-gradient(90deg, #0675dd, #26eee7);
+}
+
+section .sectionLabelContainer .sectionLabelTitle.purple {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7928ca), to(#ff0080));
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+}
+
+section .sectionLabelContainer .sectionLabelTitle.orange {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF4D4D), to(#F9CB28));
+  background-image: linear-gradient(90deg, #FF4D4D, #F9CB28);
+}
+
+section .sectionLabelContainer .sectionLabelBigTitle {
+  margin-top: 24px;
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: -0.04rem;
+}
+
+section .sectionDescriptionContainer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 430px;
+}
+
+section .sectionDescriptionContainer p {
+  text-align: left;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.11rem;
+  color: var(--gray);
+  -webkit-filter: brightness(1.4);
+          filter: brightness(1.4);
 }
 /*# sourceMappingURL=styles.css.map */

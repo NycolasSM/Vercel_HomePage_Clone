@@ -1,30 +1,112 @@
 section {
 
-  .pathSectionLineContainer {
+  .sectionLabelContainer {
 
     display: flex;
-    align-items: stretch;
+    align-items: center;
     flex-direction: column;
 
-    .pathSectionLine {
+    .sectionLabelText {
+      font-weight: 100;
+      font-size: 1.2rem;
+    }
+
+    .sectionLabelLine {
+      margin-top: 60px;
       height: 100px;
-      width: 2px;
-      box-sizing: border-box;
-      background-size: auto;
-      background-image: linear-gradient(rgb(255, 255, 255), #019ae9);
-      background-origin: padding-box;
-      background-clip: border-box;
+      width:2px;
       align-self: center;
-      background-attachment: scroll;
-      color: red;
-      background: red;
-      --start-color: white;
-      --end-color: blue;
+      background-image: linear-gradient(#000000, #696969);
+
+      &.blue {
+        background-image: linear-gradient(#000000, #019ae9);
+      }
+
+      &.purple {
+        background-image: linear-gradient(#000000, #ff0080);
+      }
+
+      &.orange {
+        background-image: linear-gradient(#000000, #FF4D4D)
+      }
+    }
+
+    .sectionLabelNumber {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding: 0 0 0 3px;
+      background: linear-gradient(90deg, #242424, #868686);
+
+      &.blue {
+        background: linear-gradient(90deg, #007CF0, #00DFD8);
+      }
+
+      &.purple {
+        background: linear-gradient(90deg, #7928ca, #ff0080)
+      }
+
+      &.orange {
+        background-image: linear-gradient(90deg, #FF4D4D, #F9CB28)
+      }
+    }
+
+    .sectionLabelTitle {
+      margin-top: 35px;
+      font-size: 3rem;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      letter-spacing: -0.09rem;
+      font-family: 'Noto Sans', sans-serif;
+      text-transform: capitalize;
+      background-image: linear-gradient(90deg, #242424, #868686);
+
+      &.blue {
+        background-image: linear-gradient(90deg, #0675dd, #26eee7);
+      }
+
+      &.purple {
+        background-image: linear-gradient(90deg, #7928ca, #ff0080)
+      }
+
+      &.orange {
+        background-image: linear-gradient(90deg, #FF4D4D, #F9CB28)
+      }
+    }
+
+    .sectionLabelBigTitle {
+      margin-top: 24px;
+      font-size: 3.2rem;
+      text-transform: capitalize;
+      font-family: 'Noto Sans', sans-serif;
+      letter-spacing: -0.04rem;
     }
   }
 
+  .sectionDescriptionContainer {
 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 430px;
 
-  //rgb(255, 255, 255)
-  //#019AE9
+    p {
+      text-align: left;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 100;
+      letter-spacing: 0.11rem;
+      color: var(--gray);
+      filter: brightness(1.4);
+    }
+  }
 }
