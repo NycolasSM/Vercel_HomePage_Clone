@@ -60,6 +60,12 @@ header .left img {
   height: 100%;
 }
 
+@media screen and (max-width: 560px) {
+  header .left {
+    height: 2.1rem;
+  }
+}
+
 header .middle ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +74,7 @@ header .middle ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  margin-left: 10px;
 }
 
 header .middle ul li a {
@@ -78,7 +85,14 @@ header .middle ul li a {
 }
 
 header .middle ul li a + a {
-  margin-left: 1.2rem;
+  margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 944px) {
+  header .middle ul li a {
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+  }
 }
 
 header .right {
@@ -110,11 +124,17 @@ header .right .conf span {
   width: max-content;
 }
 
-header .right .avatar {
-  margin-left: 0.8rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
+@media screen and (max-width: 560px) {
+  header .right {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  header {
+    max-width: 100vw;
+    width: 100%;
+  }
 }
 
 section {
@@ -150,7 +170,6 @@ section {
 }
 
 main {
-  padding: 5.6rem 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,6 +321,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
 }
 
 section .sectionLabelContainer {
@@ -318,6 +338,7 @@ section .sectionLabelContainer {
 }
 
 section .sectionLabelContainer .sectionLabelText {
+  margin-top: 40px;
   font-weight: 100;
   font-size: 1.2rem;
 }
@@ -344,8 +365,9 @@ section .sectionLabelContainer .sectionLabelLine.purple {
 }
 
 section .sectionLabelContainer .sectionLabelLine.orange {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#FF4D4D));
-  background-image: linear-gradient(#000000, #FF4D4D);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8402e), to(#FF4D4D));
+  background-image: linear-gradient(#a8402e, #FF4D4D);
+  margin-top: 0;
 }
 
 section .sectionLabelContainer .sectionLabelNumber {
@@ -419,15 +441,18 @@ section .sectionLabelContainer .sectionLabelBigTitle {
   letter-spacing: -0.04rem;
 }
 
+@media screen and (max-width: 640px) {
+  section .sectionLabelContainer .sectionLabelBigTitle {
+    font-size: 3.6rem;
+  }
+}
+
 section .sectionDescriptionContainer {
-  margin: 80px 28px 90px 28px;
+  margin: 80px 28px 40px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -442,36 +467,28 @@ section .sectionDescriptionContainer p {
   font-weight: 600;
   letter-spacing: 0.11rem;
   color: var(--gray);
+  width: 100%;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 1040px) {
   section .sectionDescriptionContainer p {
-    max-width: 400px;
+    max-width: 80vw;
   }
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 1040px) {
   section .sectionDescriptionContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 80px 5px 90px 5px;
-  }
-}
-
-@media screen and (min-width: 944px) {
-  section .sectionDescriptionContainer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    margin: 60px 5px 60px 5px;
   }
 }
 
 section .sectionFeatured {
-  width: 1100px;
   margin-bottom: 10px;
+  margin-top: 20px;
   gap: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,7 +514,7 @@ section .sectionFeatured {
 
 @media screen and (min-width: 944px) {
   section .sectionFeatured .sectionDevelopImage {
-    height: 540px;
+    height: 530px;
     width: 580px;
   }
 }
@@ -538,20 +555,20 @@ section .sectionFeatured .sectionFeaturedTopicContainer .sectionFeaturedTopic .s
   font-weight: 100;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 1120px) {
   section .sectionFeatured .sectionFeaturedTopicContainer {
     max-width: 400px;
     text-align: center;
   }
 }
 
-@media screen and (min-width: 944px) {
+@media screen and (min-width: 1120px) {
   section .sectionFeatured .sectionFeaturedTopicContainer {
     text-align: left;
   }
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 1120px) {
   section .sectionFeatured {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -560,16 +577,7 @@ section .sectionFeatured .sectionFeaturedTopicContainer .sectionFeaturedTopic .s
   }
 }
 
-@media screen and (min-width: 944px) {
-  section .sectionFeatured {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-section .sectionPreviewListIconsTools {
+section .sectionPreviewIconsToolsContainer {
   margin-top: 38px;
   list-style: none;
   display: -webkit-box;
@@ -581,5 +589,183 @@ section .sectionPreviewListIconsTools {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+section .sectionPreviewIconsToolsContainer .sectionPreviewIconsTools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+section .sectionPreviewIconsToolsContainer :hover .sectionPreviewIconsToolsTooltip {
+  -webkit-animation: showTooltip 0.5s forwards;
+          animation: showTooltip 0.5s forwards;
+  visibility: visible;
+}
+
+section .sectionPreviewIconsToolsContainer .sectionPreviewIconsToolsTooltip {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translateY(34px);
+          transform: translateY(34px);
+}
+
+@-webkit-keyframes showTooltip {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showTooltip {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section .sectionPreviewMoreInfo {
+  height: 1170px;
+  max-width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoPreviewImgContainer {
+  width: 479px;
+  padding: 0;
+  margin: 0;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoPreviewImgContainer .sectionPreviewMoreInfoPreviewImg {
+  margin: 0;
+  padding: 0;
+  width: 480px;
+  margin-bottom: 200px;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoVerticalLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoVerticalLine .initialLine {
+  width: 1px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#616161));
+  background: linear-gradient(#000000, #616161);
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoVerticalLine .line {
+  width: 1px;
+  height: 423px;
+  border: #616161 1px dashed;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoVerticalLine .endLine {
+  width: 2px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#a8402e));
+  background: linear-gradient(#616161, #a8402e);
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoVerticalLine .circle {
+  height: 10px;
+  width: 10px;
+  border: #616161 1px solid;
+  border-radius: 50%;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoTopics {
+  margin: 70px 0 300px 0;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: .1rem;
+  text-transform: initial;
+  text-align: start;
+  font-weight: 100;
+  letter-spacing: .1rem;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoTopics h3 {
+  font-size: 2rem;
+  line-height: 5rem;
+}
+
+section .sectionPreviewMoreInfo .sectionPreviewMoreInfoTopics p {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+section .globeStatistics .statisticsContainer {
+  width: 98.8vw;
+  height: 110px;
+  border-top: solid 2px #4b4b4b;
+  border-bottom: solid 2px #4b4b4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .globeStatistics .statisticsContainer .statistics {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .globeStatistics .statisticsContainer .statistics p {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+section .globeStatistics .statisticsContainer .statistics span {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+section .globeStatistics .statisticsContainer .statistics .divisorLine {
+  height: 80px;
+  width: 2px;
+  background-color: rgba(128, 128, 128, 0.212);
 }
 /*# sourceMappingURL=styles.css.map */

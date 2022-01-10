@@ -1,8 +1,5 @@
 section {
 
-
-  // TODO Arrumar a responsividade para dispositivos móveis
-
   max-width: 104.8rem;
 
   display: flex;
@@ -10,6 +7,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
 
   .sectionLabelContainer {
 
@@ -18,6 +16,7 @@ section {
     flex-direction: column;
 
     .sectionLabelText {
+      margin-top: 40px;
       font-weight: 100;
       font-size: 1.2rem;
     }
@@ -38,7 +37,8 @@ section {
       }
 
       &.orange {
-        background-image: linear-gradient(#000000, #FF4D4D)
+        background-image: linear-gradient(#a8402e, #FF4D4D);
+        margin-top: 0;
       }
     }
 
@@ -98,16 +98,18 @@ section {
       text-transform: initial;
       font-family: 'Noto Sans', sans-serif;
       letter-spacing: -0.04rem;
+
+      @media screen and (max-width: 640px) {
+        font-size: 3.6rem;
+      }
     }
   }
 
   .sectionDescriptionContainer {
 
-    margin: 80px 28px 90px 28px;
+    margin: 80px 28px 40px 28px;
     display: flex;
     gap: 30px;
-    // max-width: 1000px;
-    align-items: center;
     justify-content: center;
 
     p {
@@ -119,27 +121,22 @@ section {
       font-weight: 600;
       letter-spacing: 0.11rem;
       color: var(--gray);
+      width: 100%;
 
-      @media screen and (max-width: 944px) {
-        max-width: 400px;
-      }
-      @media screen and (min-width: 944px) {
-
+      @media screen and (max-width: 1040px) {
+        max-width: 80vw;
       }
     }
 
-    @media screen and (max-width: 944px) {
+    @media screen and (max-width: 1040px) {
       flex-direction: column;
-      margin: 80px 5px 90px 5px;
-    }
-    @media screen and (min-width: 944px) {
-      flex-direction: row;
+      margin: 60px 5px 60px 5px;
     }
   }
 
   .sectionFeatured {
-    width: 1100px;
     margin-bottom: 10px;
+    margin-top: 20px;
     gap: 35px;
     display: flex;
     flex-direction: row;
@@ -147,15 +144,12 @@ section {
     justify-content: center;
 
     .sectionDevelopImage {
-      // height: 540px;
-      // width: 580px;
-
       @media screen and (max-width: 944px) {
         height: 78vw;
         max-height: 540px;
       }
       @media screen and (min-width: 944px) {
-        height: 540px;
+        height: 530px;
         width: 580px;
       }
     }
@@ -185,30 +179,168 @@ section {
         }
       }
 
-      @media screen and (max-width: 944px) {
+      @media screen and (max-width: 1120px) {
         max-width: 400px;
         text-align: center;
       }
-      @media screen and (min-width: 944px) {
+      @media screen and (min-width: 1120px) {
         text-align: left;
       }
     }
     
-    @media screen and (max-width: 944px) {
+    @media screen and (max-width: 1120px) {
       flex-direction: column;
-    }
-    @media screen and (min-width: 944px) {
-      flex-direction: row;
     }
   }
 
-  .sectionPreviewListIconsTools {
+  .sectionPreviewIconsToolsContainer {
     margin-top: 38px;
     list-style: none;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+
+    .sectionPreviewIconsTools {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    :hover .sectionPreviewIconsToolsTooltip {
+      animation: showTooltip 0.5s forwards;
+      visibility: visible;
+    }
+
+    .sectionPreviewIconsToolsTooltip {
+      visibility: hidden;
+      position: absolute;
+      opacity: 0;
+      transform: translateY(34px);
+
+      @keyframes showTooltip {
+        0% {
+          opacity: 0;
+          visibility: visible;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .sectionPreviewMoreInfo {
+    height: 1170px;
+    max-width: 1150px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+
+    .sectionPreviewMoreInfoPreviewImgContainer {
+      width: 479px;
+      padding: 0;
+      margin: 0;
+
+      .sectionPreviewMoreInfoPreviewImg {
+        margin: 0;
+        padding: 0;
+        width: 480px;
+        margin-bottom: 200px;
+      }
+    }
+
+
+    .sectionPreviewMoreInfoVerticalLine {
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .initialLine {
+        width: 1px;
+        height: 100px;
+        background: linear-gradient(#000000, #616161);
+      }
+
+      .line {
+        width: 1px;
+        height: 423px;
+        border: #616161 1px dashed;
+      }
+
+      .endLine {
+        width: 2px;
+        height: 300px;
+        background: linear-gradient(#616161, #a8402e);
+      }
+
+      .circle {
+        height: 10px;
+        width: 10px;
+        border: #616161 1px solid;
+        border-radius: 50%;
+      }
+    }
+
+    .sectionPreviewMoreInfoTopics {
+      margin: 70px 0 300px 0;
+      font-family: 'Noto Sans', sans-serif;
+      letter-spacing: .1rem;
+      text-transform: initial;
+      text-align: start;
+      
+      font-weight: 100;
+      letter-spacing: .1rem;
+
+      h3 {
+        font-size: 2rem;
+        line-height: 5rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  .globeStatistics {
+
+    .statisticsContainer {
+      width: 98.8vw;
+      height: 110px;
+      border-top: solid 2px #4b4b4b;
+      border-bottom: solid 2px #4b4b4b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .statistics {
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+
+          font-size: 5rem;
+          font-weight: 500;
+        }
+  
+        span {
+          font-size: 1.4rem;
+          font-weight: 100;
+        }
+
+        .divisorLine {
+          height: 80px;
+          width: 2px;
+          background-color: rgba(128, 128, 128, 0.212);
+        }
+      }
+    }
   }
 }
-
