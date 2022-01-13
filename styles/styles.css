@@ -147,6 +147,16 @@ section {
   margin-bottom: 4.8rem;
 }
 
+.vercelLogoFooter {
+  height: 22px;
+}
+
+.footerTopics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @-webkit-keyframes colorCycle {
   0%, 55% {
     -webkit-filter: brightness(0) invert(1);
@@ -301,6 +311,16 @@ section {
   letter-spacing: 0.32rem;
   text-align: center;
   margin-bottom: 4.8rem;
+}
+
+.vercelLogoFooter {
+  height: 22px;
+}
+
+.footerTopics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section {
@@ -1024,5 +1044,27 @@ section .beginYourJorneyContainer .beginYourJorneyChoice .choseTemplates #templa
   height: 160px;
   width: 190px;
   position: absolute;
+}
+
+::-moz-selection {
+  background-color: #68e6ca;
+  color: black;
+}
+
+::selection {
+  background-color: #68e6ca;
+  color: black;
+}
+
+.companiesReliability {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.companiesReliability .companiesReliabilityTrusted {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=styles.css.map */

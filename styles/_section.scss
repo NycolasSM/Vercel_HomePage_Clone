@@ -537,4 +537,20 @@ section {
       }
     }
   }
+}::selection {
+  background-color: #68e6ca;
+  color: black;
+}
+
+.companiesReliability {
+
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  .companiesReliabilityTrusted {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
 }
