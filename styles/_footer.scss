@@ -58,6 +58,15 @@ section {
   margin-top: 40px;
   margin-bottom: 40px;
 
+  .footerMoreInfoOptions {
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   img {
     align-self: flex-start;
     margin-bottom: 30px;

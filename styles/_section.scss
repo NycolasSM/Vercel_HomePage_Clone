@@ -1,3 +1,10 @@
+.sectionShip {
+  width: 90vw;
+}
+
+//staticglobe
+//stati
+
 section {
 
   max-width: 104.8rem;
@@ -381,15 +388,18 @@ section {
 
   .globeStatistics {
 
+    width: 96vw;
+
     .globe {
       height: 40vw;
       max-height: 388px;
       max-width: 961px;
+      width: 96vw;
     }
 
     .statisticsContainer {
       margin-bottom: 30px;
-      width: 98.8vw;
+      width: 96vw;
       height: 110px;
       border-top: solid 2px #4b4b4b;
       border-bottom: solid 2px #4b4b4b;
@@ -568,6 +578,7 @@ section {
   margin-top: 50px;
   margin-bottom: 100px;
   overflow: hidden;
+  max-width: 96vw;
 
   .companiesReliabilityTrusted {
     overflow: hidden;

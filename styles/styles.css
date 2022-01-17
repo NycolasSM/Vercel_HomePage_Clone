@@ -215,6 +215,19 @@ section {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 800px) {
+  .footerMoreInfo .footerMoreInfoOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .footerMoreInfo img {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -472,6 +485,19 @@ section {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 800px) {
+  .footerMoreInfo .footerMoreInfoOptions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .footerMoreInfo img {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -503,6 +529,10 @@ section {
 .footerMoreInfo div .changeThemeButtom:hover {
   border: #ccc solid 1px;
   border-radius: 5px;
+}
+
+.sectionShip {
+  width: 90vw;
 }
 
 section {
@@ -1023,15 +1053,20 @@ section .sectionPreviewMoreInfoSmallScreen .sectionPreviewMoreInfoStage .section
   padding-bottom: 0px;
 }
 
+section .globeStatistics {
+  width: 96vw;
+}
+
 section .globeStatistics .globe {
   height: 40vw;
   max-height: 388px;
   max-width: 961px;
+  width: 96vw;
 }
 
 section .globeStatistics .statisticsContainer {
   margin-bottom: 30px;
-  width: 98.8vw;
+  width: 96vw;
   height: 110px;
   border-top: solid 2px #4b4b4b;
   border-bottom: solid 2px #4b4b4b;
@@ -1272,6 +1307,7 @@ section .beginYourJorneyContainer .beginYourJorneyChoice:nth-child(2) span:hover
   margin-top: 50px;
   margin-bottom: 100px;
   overflow: hidden;
+  max-width: 96vw;
 }
 
 .companiesReliability .companiesReliabilityTrusted {
