@@ -22,14 +22,14 @@ html {
   color: var(--gray);
   font-size: 62.5%;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
 }
 
 #wrapper {
   min-height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
