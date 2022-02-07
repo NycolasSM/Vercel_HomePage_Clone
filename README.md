@@ -4,6 +4,11 @@
 
 <img src="https://i.imgur.com/bs1OXwI.png">
 
+<br>
+## aceese para poder visualizar
+https://nycolassm.github.io/Vercel_HomePage_Clone/
+<br>
+
 <h2>Projeto</h2>
 <p>O projeto foi realizado com o intuíto de se aprofundar mais no uso do SCSS e aprender mais do CSS, Efeitos, animações, responsividade, boas praticas etc </p>
 <br>
