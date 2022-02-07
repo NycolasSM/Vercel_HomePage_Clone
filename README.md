@@ -6,8 +6,8 @@
 
 <br>
 <h2>Aceese para poder visualizar </h2>
-<br>
 https://nycolassm.github.io/Vercel_HomePage_Clone/
+<br>
 <br>
 
 <h2>Projeto</h2>
