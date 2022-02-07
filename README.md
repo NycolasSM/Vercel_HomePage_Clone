@@ -5,7 +5,8 @@
 <img src="https://i.imgur.com/bs1OXwI.png">
 
 <br>
-## aceese para poder visualizar
+<h2>Aceese para poder visualizar </h2>
+<br>
 https://nycolassm.github.io/Vercel_HomePage_Clone/
 <br>
 
